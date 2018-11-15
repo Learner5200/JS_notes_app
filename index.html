@@ -9,26 +9,25 @@
 
 <body>
   <div id="app">
-    hello Chris muge
   </div>
 
-  <form id="text" method="get" action="#/notes">
+  <form id="text" method="post" action="#/notes">
     <textarea name="note-text" rows="10" cols="50">
     </textarea>
     <input type="submit">
   </form>
 
-    <script src="./lib/note.js"></script>
-    <script src="./lib/noteList.js"></script>
-    <script src="./lib/noteListView.js"></script>
-    <script src="./lib/singleNoteView.js"></script>
-    <script src="./lib/note-controller.js"></script>
-    <script>
-      var controller = new NoteController(new NoteList());
-      controller.loadNotesHTML();
-      controller.displayNoteOnClick();
-      controller.listenForSubmit();
-    </script>
+  <script src="./lib/note.js"></script>
+  <script src="./lib/noteList.js"></script>
+  <script src="./lib/noteListView.js"></script>
+  <script src="./lib/singleNoteView.js"></script>
+  <script src="./lib/note-controller.js"></script>
+  <script>
+    var controller = new NoteController(new NoteList());
+    controller.loadNotesHTML();
+    controller.displayNoteOnClick();
+    controller.listenForSubmit();
+  </script>
 </body>
 
 </html>
