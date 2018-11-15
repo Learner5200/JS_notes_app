@@ -12,7 +12,7 @@
     hello Chris muge
   </div>
 
-  <form id="text" method="post" action="#/notes">
+  <form id="text" method="get" action="#/notes">
     <textarea name="note-text" rows="10" cols="50">
     </textarea>
     <input type="submit">
@@ -27,6 +27,7 @@
       var controller = new NoteController(new NoteList());
       controller.loadNotesHTML();
       controller.displayNoteOnClick();
+      controller.listenForSubmit();
     </script>
 </body>
 
