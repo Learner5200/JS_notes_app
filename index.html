@@ -1,15 +1,22 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
 
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
-    <div id="app">
-      hello Chris muge
-    </div>
+<head>
+
+  <meta charset="utf-8">
+  <title></title>
+</head>
+
+<body>
+  <div id="app">
+    hello Chris muge
+  </div>
+
+  <form id="text" method="post" action="#/notes">
+    <textarea name="note-text" rows="10" cols="50">
+    </textarea>
+    <input type="submit">
+  </form>
 
     <script src="./lib/note.js"></script>
     <script src="./lib/noteList.js"></script>
@@ -21,5 +28,6 @@
       controller.loadNotesHTML();
       controller.displayNoteOnClick();
     </script>
-  </body>
+</body>
+
 </html>
