@@ -3,13 +3,12 @@ describe("NoteController", function() {
   var controller = new NoteController(noteList);
 
   describe("On initialization", function() {
-    it("adds seltzer note to notelist", function() {
-      expect(noteList.notes()[0].text()).toBe("Favourite drink: seltzer");
-    });
     it("creates notelist view with notelist", function() {
       expect(controller.noteListView.noteList).toBe(noteList);
     });
   });
+
+  noteList.create("Favourite drink: seltzer")
 
   describe(".loadNotesHTML()", function() {
     it("adds list to div on page", function() {
